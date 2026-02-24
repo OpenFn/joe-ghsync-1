@@ -1,0 +1,52 @@
+{
+  "env": null,
+  "id": "abc087dd-3963-4260-8d09-ced2e1ff2bb0",
+  "name": "joe-ghsync-v1",
+  "description": "Testing V1 GH sync",
+  "color": null,
+  "concurrency": 2,
+  "inserted_at": "2026-02-24T09:52:19Z",
+  "updated_at": "2026-02-24T09:52:19Z",
+  "parent_id": null,
+  "scheduled_deletion": null,
+  "history_retention_period": 90,
+  "dataclip_retention_period": null,
+  "retention_policy": "retain_all",
+  "project_credentials": {},
+  "collections": {},
+  "workflows": {
+    "Workflow": {
+      "id": "e6c07577-7529-4b25-941d-9151dd47f30a",
+      "name": "Workflow",
+      "inserted_at": "2026-02-24T09:52:44.327335Z",
+      "lock_version": 3,
+      "triggers": {
+        "webhook": {
+          "enabled": true,
+          "id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
+          "type": "webhook"
+        }
+      },
+      "jobs": {
+        "A": {
+          "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
+          "name": "A",
+          "body": "// Validate and transform the data you've received...\nfn(state => {\n  console.log(\"Do some data transformation here\");\n  return state;\n})\n",
+          "adaptor": "@openfn/language-common@latest",
+          "project_credential_id": null
+        }
+      },
+      "edges": {
+        "webhook->A": {
+          "enabled": true,
+          "id": "aad07b97-bc78-43bb-8dca-8f3d6e2a3790",
+          "target_job_id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
+          "source_trigger_id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
+          "condition_type": "always"
+        }
+      }
+    }
+  },
+  "allow_support_access": false,
+  "requires_mfa": false
+}
