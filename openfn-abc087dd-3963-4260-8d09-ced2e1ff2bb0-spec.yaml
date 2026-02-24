@@ -14,6 +14,7 @@ workflows:
         body: |
           fn(state => {
             console.log("Do some data transformation here");
+            // update
             return state;
           })
 
