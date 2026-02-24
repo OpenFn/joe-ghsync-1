@@ -18,8 +18,8 @@
     "Workflow": {
       "id": "e6c07577-7529-4b25-941d-9151dd47f30a",
       "name": "Workflow",
-      "inserted_at": "2026-02-24T09:52:44.327335Z",
-      "lock_version": 3,
+      "inserted_at": "2026-02-24T10:01:14.521240Z",
+      "lock_version": 4,
       "triggers": {
         "webhook": {
           "enabled": true,
@@ -31,7 +31,7 @@
         "A": {
           "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
           "name": "A",
-          "body": "// Validate and transform the data you've received...\nfn(state => {\n  console.log(\"Do some data transformation here\");\n  return state;\n})\n",
+          "body": "fn(state => {\n  console.log(\"Do some data transformation here\");\n  return state;\n})\n",
           "adaptor": "@openfn/language-common@latest",
           "project_credential_id": null
         }
