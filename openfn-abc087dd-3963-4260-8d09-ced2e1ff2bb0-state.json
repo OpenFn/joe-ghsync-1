@@ -31,7 +31,7 @@
         "A": {
           "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
           "name": "A",
-          "body": "fn(state => {\n  // aaa\n  return state;\n})\n",
+          "body": "fn(state => {\n  // bbb\n  return state;\n})\n",
           "adaptor": "@openfn/language-common@latest",
           "project_credential_id": null
         }
