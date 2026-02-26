@@ -1,6 +1,7 @@
 name: joe-ghsync-v1
 description: |
   Testing V1 GH sync
+
 collections: null
 credentials: null
 workflows:
@@ -13,8 +14,7 @@ workflows:
         credential: null
         body: |
           fn(state => {
-            console.log("Do some data transformation here");
-            // update
+            // aaa
             return state;
           })
 
