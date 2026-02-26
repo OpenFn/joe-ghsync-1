@@ -6,7 +6,7 @@
   "color": null,
   "concurrency": 2,
   "inserted_at": "2026-02-24T09:52:19Z",
-  "updated_at": "2026-02-26T14:32:41Z",
+  "updated_at": "2026-02-26T15:48:15Z",
   "parent_id": null,
   "scheduled_deletion": null,
   "history_retention_period": 90,
@@ -29,12 +29,12 @@
       },
       "concurrency": null,
       "inserted_at": "2026-02-24T09:52:31Z",
-      "updated_at": "2026-02-26T15:44:58Z",
+      "updated_at": "2026-02-26T15:48:15Z",
       "jobs": {
         "A": {
           "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
           "name": "A",
-          "body": "fn(state => {\n  // aaa\n  return state;\n})\n",
+          "body": "fn(state => {\n  // bbb\n  return state;\n})\n",
           "adaptor": "@openfn/language-common@latest",
           "project_credential_id": null
         }
@@ -46,12 +46,13 @@
           "type": "webhook"
         }
       },
-      "lock_version": 7,
+      "lock_version": 8,
       "deleted_at": null,
       "version_history": [
         "app:b21e29cf1739",
         "cli:c8705b5978c4",
-        "app:9ac0daf1c04f"
+        "app:9ac0daf1c04f",
+        "cli:a4a85fea8482"
       ]
     }
   },
