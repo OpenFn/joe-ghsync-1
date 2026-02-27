@@ -6,7 +6,7 @@
   "color": null,
   "concurrency": 2,
   "inserted_at": "2026-02-24T09:52:19Z",
-  "updated_at": "2026-02-26T15:48:15Z",
+  "updated_at": "2026-02-27T13:29:34Z",
   "parent_id": null,
   "scheduled_deletion": null,
   "history_retention_period": 90,
@@ -18,6 +18,24 @@
     "Workflow": {
       "id": "e6c07577-7529-4b25-941d-9151dd47f30a",
       "name": "Workflow",
+      "inserted_at": "2026-02-27T13:29:34.644853Z",
+      "lock_version": 11,
+      "triggers": {
+        "webhook": {
+          "enabled": true,
+          "id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
+          "type": "webhook"
+        }
+      },
+      "jobs": {
+        "A": {
+          "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
+          "name": "A",
+          "body": "fn(state => {\n  // eee\n  return state;\n})\n",
+          "adaptor": "@openfn/language-common@latest",
+          "project_credential_id": null
+        }
+      },
       "edges": {
         "webhook->A": {
           "enabled": true,
@@ -26,34 +44,7 @@
           "source_trigger_id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
           "condition_type": "always"
         }
-      },
-      "concurrency": null,
-      "inserted_at": "2026-02-24T09:52:31Z",
-      "updated_at": "2026-02-26T15:48:15Z",
-      "jobs": {
-        "A": {
-          "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
-          "name": "A",
-          "body": "fn(state => {\n  // bbb\n  return state;\n})\n",
-          "adaptor": "@openfn/language-common@latest",
-          "project_credential_id": null
-        }
-      },
-      "triggers": {
-        "webhook": {
-          "enabled": true,
-          "id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
-          "type": "webhook"
-        }
-      },
-      "lock_version": 8,
-      "deleted_at": null,
-      "version_history": [
-        "app:b21e29cf1739",
-        "cli:c8705b5978c4",
-        "app:9ac0daf1c04f",
-        "cli:a4a85fea8482"
-      ]
+      }
     }
   },
   "allow_support_access": false,
