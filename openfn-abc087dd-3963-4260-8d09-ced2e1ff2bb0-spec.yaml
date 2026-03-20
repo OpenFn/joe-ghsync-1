@@ -9,12 +9,12 @@ workflows:
     name: Workflow
     jobs:
       "A":
-        name: 'A'
-        adaptor: '@openfn/language-common@latest'
+        name: "A"
+        adaptor: "@openfn/language-common@latest"
         credential: null
         body: |
           fn(state => {
-            // eee
+            // 213
             return state;
           })
 
@@ -25,6 +25,6 @@ workflows:
     edges:
       webhook->A:
         source_trigger: webhook
-        target_job: 'A'
+        target_job: "A"
         condition_type: always
         enabled: true
