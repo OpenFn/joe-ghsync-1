@@ -3,6 +3,7 @@ description: |
   Testing V1 GH sync
 
 collections: null
+channels: null
 credentials: null
 workflows:
   Workflow:
@@ -21,6 +22,7 @@ workflows:
     triggers:
       webhook:
         type: webhook
+        webhook_reply: before_start
         enabled: true
     edges:
       webhook->A:

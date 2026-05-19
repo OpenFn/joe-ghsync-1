@@ -1,21 +1,20 @@
 {
-  "env": null,
+  "env": "main",
   "id": "abc087dd-3963-4260-8d09-ced2e1ff2bb0",
   "name": "joe-ghsync-v1",
   "description": "Testing V1 GH sync\n",
   "color": null,
   "concurrency": 2,
   "inserted_at": "2026-02-24T09:52:19Z",
-  "updated_at": "2026-03-20T15:47:40Z",
+  "updated_at": "2026-05-11T12:04:49Z",
+  "channels": {},
   "parent_id": null,
   "scheduled_deletion": null,
   "history_retention_period": 90,
-  "dataclip_retention_period": null,
+  "dataclip_retention_period": 90,
   "retention_policy": "retain_all",
   "project_credentials": {},
-  "allow_support_access": false,
   "collections": {},
-  "requires_mfa": false,
   "workflows": {
     "Workflow": {
       "id": "e6c07577-7529-4b25-941d-9151dd47f30a",
@@ -26,7 +25,8 @@
         "webhook": {
           "enabled": true,
           "id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
-          "type": "webhook"
+          "type": "webhook",
+          "webhook_reply": "before_start"
         }
       },
       "jobs": {
@@ -48,5 +48,7 @@
         }
       }
     }
-  }
+  },
+  "allow_support_access": true,
+  "requires_mfa": false
 }
