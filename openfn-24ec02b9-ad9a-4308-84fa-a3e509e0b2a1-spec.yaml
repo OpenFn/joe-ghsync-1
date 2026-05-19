@@ -1,0 +1,32 @@
+name: dev
+description: |
+  Testing V1 GH sync
+
+collections: null
+channels: null
+credentials: null
+workflows:
+  Workflow:
+    name: Workflow
+    jobs:
+      "A":
+        name: 'A'
+        adaptor: '@openfn/language-common@latest'
+        credential: null
+        body: |
+          fn(state => {
+            // jam
+            return state;
+          })
+
+    triggers:
+      webhook:
+        type: webhook
+        webhook_reply: before_start
+        enabled: false
+    edges:
+      webhook->A:
+        source_trigger: webhook
+        target_job: 'A'
+        condition_type: always
+        enabled: true
