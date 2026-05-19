@@ -6,7 +6,7 @@
   "color": null,
   "concurrency": 2,
   "inserted_at": "2026-02-24T09:52:19Z",
-  "updated_at": "2026-05-11T12:04:49Z",
+  "updated_at": "2026-05-19T14:47:44Z",
   "channels": {},
   "parent_id": null,
   "scheduled_deletion": null,
@@ -19,25 +19,6 @@
     "Workflow": {
       "id": "e6c07577-7529-4b25-941d-9151dd47f30a",
       "name": "Workflow",
-      "inserted_at": "2026-03-20T15:49:36.934965Z",
-      "lock_version": 15,
-      "triggers": {
-        "webhook": {
-          "enabled": true,
-          "id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
-          "type": "webhook",
-          "webhook_reply": "before_start"
-        }
-      },
-      "jobs": {
-        "A": {
-          "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
-          "name": "A",
-          "body": "fn(state => {\n  // jam\n  return state;\n})\n",
-          "project_credential_id": null,
-          "adaptor": "@openfn/language-common@latest"
-        }
-      },
       "edges": {
         "webhook->A": {
           "enabled": true,
@@ -46,7 +27,41 @@
           "source_trigger_id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
           "condition_type": "always"
         }
-      }
+      },
+      "concurrency": null,
+      "inserted_at": "2026-02-24T09:52:31Z",
+      "updated_at": "2026-05-19T14:47:44Z",
+      "jobs": {
+        "A": {
+          "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
+          "name": "A",
+          "body": "fn(state => {\n  // jam 1234\n  return state;\n})\n",
+          "project_credential_id": null,
+          "adaptor": "@openfn/language-common@latest"
+        }
+      },
+      "triggers": {
+        "webhook": {
+          "enabled": true,
+          "id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
+          "type": "webhook",
+          "webhook_reply": "before_start"
+        }
+      },
+      "lock_version": 16,
+      "deleted_at": null,
+      "version_history": [
+        "app:b21e29cf1739",
+        "cli:c8705b5978c4",
+        "app:9ac0daf1c04f",
+        "cli:a4a85fea8482",
+        "app:239c3173b1e6",
+        "cli:e9824cce15d3",
+        "app:e9824cce15d3",
+        "cli:9ac0daf1c04f",
+        "app:1f9d293220ac",
+        "cli:fe3037f2e79e"
+      ]
     }
   },
   "allow_support_access": true,
