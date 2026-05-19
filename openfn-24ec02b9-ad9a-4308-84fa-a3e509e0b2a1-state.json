@@ -6,7 +6,7 @@
   "color": "#F39B33",
   "concurrency": null,
   "inserted_at": "2026-05-19T10:56:30Z",
-  "updated_at": "2026-05-19T10:56:30Z",
+  "updated_at": "2026-05-19T10:59:49Z",
   "channels": {},
   "parent_id": "abc087dd-3963-4260-8d09-ced2e1ff2bb0",
   "scheduled_deletion": null,
@@ -19,25 +19,6 @@
     "Workflow": {
       "id": "bac08c4a-4b4a-4ab7-8ad6-2381b0ac8cd1",
       "name": "Workflow",
-      "inserted_at": "2026-05-19T10:56:30.306958Z",
-      "lock_version": 1,
-      "triggers": {
-        "webhook": {
-          "enabled": false,
-          "id": "60758593-ea51-43ee-ab3a-4c737e97d5b9",
-          "type": "webhook",
-          "webhook_reply": "before_start"
-        }
-      },
-      "jobs": {
-        "A": {
-          "id": "d0ceebd0-a2a3-4172-8700-6b099f11807e",
-          "name": "A",
-          "body": "fn(state => {\n  // jam\n  return state;\n})\n",
-          "project_credential_id": null,
-          "adaptor": "@openfn/language-common@latest"
-        }
-      },
       "edges": {
         "webhook->A": {
           "enabled": true,
@@ -46,7 +27,33 @@
           "source_trigger_id": "60758593-ea51-43ee-ab3a-4c737e97d5b9",
           "condition_type": "always"
         }
-      }
+      },
+      "concurrency": null,
+      "inserted_at": "2026-05-19T10:56:30Z",
+      "updated_at": "2026-05-19T10:59:49Z",
+      "jobs": {
+        "A": {
+          "id": "d0ceebd0-a2a3-4172-8700-6b099f11807e",
+          "name": "A",
+          "body": "fn(state => {\n  // jam 1235\n  return state;\n})\n",
+          "project_credential_id": null,
+          "adaptor": "@openfn/language-common@latest"
+        }
+      },
+      "triggers": {
+        "webhook": {
+          "enabled": false,
+          "id": "60758593-ea51-43ee-ab3a-4c737e97d5b9",
+          "type": "webhook",
+          "webhook_reply": "before_start"
+        }
+      },
+      "lock_version": 2,
+      "deleted_at": null,
+      "version_history": [
+        "app:1f9d293220ac",
+        "cli:c8db6341d74d"
+      ]
     }
   },
   "allow_support_access": true,
