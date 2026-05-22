@@ -15,7 +15,7 @@ workflows:
         credential: null
         body: |
           fn(state => {
-            // jam 1234
+            // jam 1
             return state;
           })
 
