@@ -6,7 +6,7 @@
   "color": null,
   "concurrency": 2,
   "inserted_at": "2026-02-24T09:52:19Z",
-  "updated_at": "2026-05-19T14:47:44Z",
+  "updated_at": "2026-05-22T10:58:57Z",
   "channels": {},
   "parent_id": null,
   "scheduled_deletion": null,
@@ -19,8 +19,8 @@
     "Workflow": {
       "id": "e6c07577-7529-4b25-941d-9151dd47f30a",
       "name": "Workflow",
-      "inserted_at": "2026-05-22T10:56:44.921089Z",
-      "lock_version": 17,
+      "inserted_at": "2026-05-22T10:58:58.023057Z",
+      "lock_version": 18,
       "triggers": {
         "webhook": {
           "enabled": true,
@@ -33,7 +33,7 @@
         "A": {
           "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
           "name": "A",
-          "body": "fn(state => {\n  // jam 1\n  return state;\n})\n",
+          "body": "fn(state => {\n  // jam 66\n  return state;\n})\n",
           "project_credential_id": null,
           "adaptor": "@openfn/language-common@latest"
         }
