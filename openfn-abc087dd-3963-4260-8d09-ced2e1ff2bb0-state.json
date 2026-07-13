@@ -13,24 +13,24 @@
   "history_retention_period": 90,
   "dataclip_retention_period": 90,
   "retention_policy": "retain_all",
-  "project_credentials": {},
+  "allow_support_access": true,
   "collections": {},
+  "project_credentials": {},
+  "requires_mfa": false,
   "workflows": {
     "Workflow": {
       "id": "e6c07577-7529-4b25-941d-9151dd47f30a",
       "name": "Workflow",
-      "edges": {
-        "webhook->A": {
+      "inserted_at": "2026-05-26T18:32:11.450620Z",
+      "lock_version": 19,
+      "triggers": {
+        "webhook": {
           "enabled": true,
-          "id": "aad07b97-bc78-43bb-8dca-8f3d6e2a3790",
-          "target_job_id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
-          "source_trigger_id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
-          "condition_type": "always"
+          "id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
+          "type": "webhook",
+          "webhook_reply": "before_start"
         }
       },
-      "concurrency": null,
-      "inserted_at": "2026-02-24T09:52:31Z",
-      "updated_at": "2026-05-26T18:32:11Z",
       "jobs": {
         "A": {
           "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
@@ -40,34 +40,15 @@
           "adaptor": "@openfn/language-common@latest"
         }
       },
-      "triggers": {
-        "webhook": {
+      "edges": {
+        "webhook->A": {
           "enabled": true,
-          "id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
-          "type": "webhook",
-          "webhook_reply": "before_start"
+          "id": "aad07b97-bc78-43bb-8dca-8f3d6e2a3790",
+          "target_job_id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
+          "source_trigger_id": "57b32b4e-fac3-4203-8921-cc60a397e0a0",
+          "condition_type": "always"
         }
-      },
-      "lock_version": 19,
-      "deleted_at": null,
-      "version_history": [
-        "app:b21e29cf1739",
-        "cli:c8705b5978c4",
-        "app:9ac0daf1c04f",
-        "cli:a4a85fea8482",
-        "app:239c3173b1e6",
-        "cli:e9824cce15d3",
-        "app:e9824cce15d3",
-        "cli:9ac0daf1c04f",
-        "app:1f9d293220ac",
-        "cli:fe3037f2e79e",
-        "app:7c11929d7fd7",
-        "cli:4c779e623c9f",
-        "app:4c779e623c9f",
-        "cli:f55e5f54f902"
-      ]
+      }
     }
-  },
-  "allow_support_access": true,
-  "requires_mfa": false
+  }
 }
