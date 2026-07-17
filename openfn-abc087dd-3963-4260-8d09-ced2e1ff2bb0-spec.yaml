@@ -14,7 +14,7 @@ workflows:
         adaptor: '@openfn/language-image-utils@1.0.0'
         credential: null
         body: |
-          // delete meeee
+          log($.data)
     triggers:
       webhook:
         type: webhook
