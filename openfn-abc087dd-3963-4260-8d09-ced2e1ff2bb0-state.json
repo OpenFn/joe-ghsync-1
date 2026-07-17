@@ -21,8 +21,8 @@
     "Workflow": {
       "id": "e6c07577-7529-4b25-941d-9151dd47f30a",
       "name": "Workflow",
-      "inserted_at": "2026-05-26T18:32:11.450620Z",
-      "lock_version": 19,
+      "inserted_at": "2026-07-17T16:22:18.120680Z",
+      "lock_version": 20,
       "triggers": {
         "webhook": {
           "enabled": true,
@@ -35,9 +35,9 @@
         "A": {
           "id": "0ccee883-38de-46d7-8e33-84e5c1057e45",
           "name": "A",
-          "body": "fn(state => {\n  // jam 67\n  return state;\n})\n",
+          "body": "// delete meeee",
           "project_credential_id": null,
-          "adaptor": "@openfn/language-common@latest"
+          "adaptor": "@openfn/language-image-utils@1.0.0"
         }
       },
       "edges": {

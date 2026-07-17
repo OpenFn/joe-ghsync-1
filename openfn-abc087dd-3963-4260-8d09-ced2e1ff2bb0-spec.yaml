@@ -11,14 +11,10 @@ workflows:
     jobs:
       "A":
         name: 'A'
-        adaptor: '@openfn/language-common@latest'
+        adaptor: '@openfn/language-image-utils@1.0.0'
         credential: null
         body: |
-          fn(state => {
-            // jam 67
-            return state;
-          })
-
+          // delete meeee
     triggers:
       webhook:
         type: webhook
