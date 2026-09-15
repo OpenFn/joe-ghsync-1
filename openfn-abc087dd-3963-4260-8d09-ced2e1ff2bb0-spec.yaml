@@ -14,13 +14,13 @@ workflows:
         adaptor: '@openfn/language-langfuse@1.0.0'
         credential: null
         body: |
-          log($.data) // 2
+          log($.data) // 
 
     triggers:
       webhook:
         type: webhook
         webhook_reply: before_start
-        enabled: true
+        enabled: false
     edges:
       webhook->A:
         source_trigger: webhook
