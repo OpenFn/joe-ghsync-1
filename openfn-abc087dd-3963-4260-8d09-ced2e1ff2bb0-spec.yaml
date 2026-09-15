@@ -10,11 +10,11 @@ workflows:
     name: Workflow
     jobs:
       "A":
-        name: 'A'
-        adaptor: '@openfn/language-langfuse@1.0.0'
+        name: "A"
+        adaptor: "@openfn/language-langfuse@1.0.0"
         credential: null
         body: |
-          log($.data) // 
+          log($.data) // 123
 
     triggers:
       webhook:
@@ -24,6 +24,6 @@ workflows:
     edges:
       webhook->A:
         source_trigger: webhook
-        target_job: 'A'
+        target_job: "A"
         condition_type: always
         enabled: true
