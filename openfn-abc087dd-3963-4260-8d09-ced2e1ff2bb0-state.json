@@ -21,8 +21,8 @@
     "Workflow": {
       "id": "e6c07577-7529-4b25-941d-9151dd47f30a",
       "name": "Workflow",
-      "inserted_at": "2026-09-15T11:02:59.259593Z",
-      "lock_version": 25,
+      "inserted_at": "2026-09-15T12:34:38.048534Z",
+      "lock_version": 27,
       "triggers": {
         "webhook": {
           "enabled": false,
