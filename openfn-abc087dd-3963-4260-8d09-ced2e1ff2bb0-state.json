@@ -5,7 +5,7 @@
   "description": "Testing V1 GH sync\n",
   "color": null,
   "inserted_at": "2026-02-24T09:52:19Z",
-  "updated_at": "2026-10-12T13:22:49Z",
+  "updated_at": "2026-10-12T13:28:07Z",
   "channels": {},
   "parent_id": null,
   "concurrency": 2,
@@ -87,12 +87,12 @@
         }
       },
       "inserted_at": "2026-09-29T15:38:19Z",
-      "updated_at": "2026-10-12T13:22:49Z",
+      "updated_at": "2026-10-12T13:28:07Z",
       "jobs": {
         "x": {
           "id": "f042e371-718d-4713-8f05-fbeb0c4c037f",
           "name": "x",
-          "body": "fn((s) => s); // 12 oct 2026\n",
+          "body": "fn((s) => s); // 12 oct 2026!\n",
           "project_credential_id": null,
           "adaptor": "@openfn/language-common@latest"
         }
@@ -107,12 +107,12 @@
           "cron_cursor_job_id": "f042e371-718d-4713-8f05-fbeb0c4c037f"
         }
       },
-      "lock_version": 10,
+      "lock_version": 11,
       "deleted_at": null,
       "version_history": [
         "app:b460807138bf",
         "app:0acab57e2297",
-        "cli:6116f39dbab7"
+        "cli:8253c1223c03"
       ]
     }
   }
