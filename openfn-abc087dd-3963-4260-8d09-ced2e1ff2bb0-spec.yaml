@@ -10,30 +10,30 @@ workflows:
     name: cron thing
     jobs:
       "x":
-        name: 'x'
-        adaptor: '@openfn/language-common@latest'
+        name: "x"
+        adaptor: "@openfn/language-common@latest"
         credential: null
         body: |
-          fn((s) => s);
+          fn((s) => s); // 12 oct 2026
 
     triggers:
       cron:
         type: cron
-        cron_expression: '0 0 * * *'
-        cron_cursor_job: 'x'
+        cron_expression: "0 0 * * *"
+        cron_cursor_job: "x"
         enabled: true
     edges:
       cron->x:
         source_trigger: cron
-        target_job: 'x'
+        target_job: "x"
         condition_type: always
         enabled: true
   my-workflow:
     name: my workflow
     jobs:
       "A":
-        name: 'A'
-        adaptor: '@openfn/language-langfuse@1.0.0'
+        name: "A"
+        adaptor: "@openfn/language-langfuse@1.0.0"
         credential: null
         body: |
           log($.data) // v7 maybe?
@@ -46,6 +46,6 @@ workflows:
     edges:
       webhook->A:
         source_trigger: webhook
-        target_job: 'A'
+        target_job: "A"
         condition_type: always
         enabled: true
