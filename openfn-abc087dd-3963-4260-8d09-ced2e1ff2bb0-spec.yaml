@@ -14,7 +14,7 @@ workflows:
         adaptor: "@openfn/language-common@latest"
         credential: null
         body: |
-          fn((s) => s); // 12 oct 2026
+          fn((s) => s); // 12 oct 2026!
 
     triggers:
       cron:

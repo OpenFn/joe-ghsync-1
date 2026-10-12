@@ -1,0 +1,21 @@
+- I have pulled from git
+- git and app look consistent
+- I make a local change, commit and push
+- everything on gh ran fine
+- but the app doens't see the change
+- cli log says it's deployed
+- aha!!! there it is. There was like a 2 minute delay?
+
+
+
+ok. using new cli, let me deploy a change direct
+
+- I am not in draft mode. latest is v6.
+- I edit the spec and deploy with v1
+- the v1 diff is weird because version history is dropped, which is very spammy. But the key diff is there
+- aha, I re-pulled and now my diff is cleaner
+- so that apparently deployed
+- I refresh teh app... and no change. I'm still on latest.
+- WHen I refersh now it tells me I'll lose changes
+- reload and... changes still aren't there
+- if I go back out to the workflow and in again, I can see it
